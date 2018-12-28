@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="32.213262">
+<testcase classname="User Login" name="Login into LRA" time="32.213262">
+<system-out><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
+When I give the valid "Test0001" and "Pass@1234"............................passed
+Then Home page apper in screen..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
