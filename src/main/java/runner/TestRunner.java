@@ -14,7 +14,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-@CucumberOptions(features = ".//src//main//java//features//UserLogin.feature",
+@CucumberOptions(features = ".//src//main//java//features",
 				 glue={"stepdefination"},
 				 format= {"pretty","html:test-outout", "junit:junit_xml/cucumber.xml",
 						 "json:target/cucumber-reports/CucumberTestReport.json"},
@@ -22,8 +22,8 @@ import cucumber.api.testng.TestNGCucumberRunner;
 				 monochrome=true,
 				 dryRun=false
 				 ) 
-//@Test
-public class TestRunner //extends AbstractTestNGCucumberTests
+
+public class TestRunner
 {
 	private TestNGCucumberRunner testNGCucumberRunner;
 	
@@ -46,9 +46,10 @@ public class TestRunner //extends AbstractTestNGCucumberTests
     }
  
     @AfterClass(alwaysRun = true)
-    public void tearDownClass() throws Exception 
+    public void tearDownClass() throws Throwable 
     {
         testNGCucumberRunner.finish();
+        Utility.Reporter.after();
     }
 }
 

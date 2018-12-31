@@ -1,9 +1,80 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="32.213262">
-<testcase classname="User Login" name="Login into LRA" time="32.213262">
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="149.915413">
+<testcase classname="User Login" name="Login into LRA" time="28.138169">
+<failure message="org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Captcha does not match.}&#10;  (Session info: chrome=71.0.3578.98)&#10;  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds: null&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'DEV_TEST_JOYDIP', ip: '192.168.141.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\JOYDIP~1.BHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65219}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}&#10;Session ID: 3386d2532914c413621fb70174d6168c&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)&#13;&#10;&#9;at Screen.Login.logintest(Login.java:131)&#13;&#10;&#9;at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:24)&#13;&#10;&#9;at ✽.When I give the valid &quot;Test0001&quot; and &quot;Pass@1234&quot;(UserLogin.feature:6)&#13;&#10;"><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
+When I give the valid "Test0001" and "Pass@1234"............................failed
+Then Home page apper in screen..............................................skipped
+
+StackTrace:
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Captcha does not match.}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds: null
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DEV_TEST_JOYDIP', ip: '192.168.141.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\JOYDIP~1.BHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65219}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 3386d2532914c413621fb70174d6168c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at Screen.Login.logintest(Login.java:131)
+	at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:24)
+	at ✽.When I give the valid "Test0001" and "Pass@1234"(UserLogin.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="User Logout" name="Logout from LRA" time="31.760421">
 <system-out><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
 When I give the valid "Test0001" and "Pass@1234"............................passed
 Then Home page apper in screen..............................................passed
+Given All ready logedin into the user portal................................passed
+Then click on Logout........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Make Payment for Certificate" name="User Procced for payment" time="52.549068">
+<failure message="java.lang.AssertionError: Timeout waiting for Page Load Request to complete.&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at configuration.Basesuit.waitForPageLoad(Basesuit.java:64)&#13;&#10;&#9;at Screen.MyRequest_Makepayment.Card_Number(MyRequest_Makepayment.java:131)&#13;&#10;&#9;at stepdefination.Usermakepayment.fill_your_cardn_details_and_click_on_confirm_payment(Usermakepayment.java:44)&#13;&#10;&#9;at ✽.When Fill your cardn details and click on confirm payment(UserMakepayment.feature:14)&#13;&#10;"><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
+When I give the valid "Test0001" and "Pass@1234"............................passed
+Then Home page apper in screen..............................................passed
+Given Click on My reques button.............................................passed
+When Search your requestid..................................................passed
+When Click on make payment..................................................passed
+When Select Bank and click on process.......................................passed
+When Fill your cardn details and click on confirm payment...................failed
+Then Payment successfull page should apper..................................skipped
+
+StackTrace:
+java.lang.AssertionError: Timeout waiting for Page Load Request to complete.
+	at org.testng.Assert.fail(Assert.java:96)
+	at configuration.Basesuit.waitForPageLoad(Basesuit.java:64)
+	at Screen.MyRequest_Makepayment.Card_Number(MyRequest_Makepayment.java:131)
+	at stepdefination.Usermakepayment.fill_your_cardn_details_and_click_on_confirm_payment(Usermakepayment.java:44)
+	at ✽.When Fill your cardn details and click on confirm payment(UserMakepayment.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="User Apply for New Certificate" name="Apply for New Certificate" time="37.467755">
+<system-out><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
+When I give the valid "Test0001" and "Pass@1234"............................passed
+Then Home page apper in screen..............................................passed
+Given Click on New Certificate button.......................................passed
+When Fill the form and click on add.........................................passed
+Then Certified True Copy should generate requestid..........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

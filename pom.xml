@@ -20,6 +20,12 @@
     <artifactId>webdrivermanager</artifactId>
     <version>3.0.0</version>
 </dependency>
+
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>1.7.25</version>
+</dependency>
  
 <dependency>
     	<groupId>org.seleniumhq.selenium</groupId>
@@ -111,34 +117,6 @@
 						<suiteXmlFile>Citizen_UAT.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>net.masterthought</groupId>
-				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>3.18.0</version>
-				<executions>
-					<execution>
-						<id>execution</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<projectName>MyProjectName</projectName>  <!-- Replace with project name -->
-							<outputDirectory>${project.basedir}/target/cucumber-reports/advanced-reports</outputDirectory>
-							<inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
-                            <jsonFiles>
-                                <!-- supports wildcard or name pattern -->
-                                <param>**/*.json</param>
-                            </jsonFiles>
-							
-							<buildNumber>1</buildNumber>
-							<enableFlashCharts>false</enableFlashCharts>
-							<parallelTesting>false</parallelTesting>
-							<checkBuildResult>false</checkBuildResult>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build> 
