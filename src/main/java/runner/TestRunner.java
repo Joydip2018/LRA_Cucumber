@@ -14,7 +14,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-@CucumberOptions(features = ".//src//main//java//features",
+@CucumberOptions(features = {".//src//main//java//features//UserUpdateProfile.feature",
+							".//src//main//java//features//UserTransectionreport.feature",
+							".//src//main//java//features//UserNewCertificate.feature"},
+				 //tags={"@p2","@p1"},
 				 glue={"stepdefination"},
 				 format= {"pretty","html:test-outout", "junit:junit_xml/cucumber.xml",
 						 "json:target/cucumber-reports/CucumberTestReport.json"},

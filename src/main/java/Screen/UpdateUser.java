@@ -73,17 +73,20 @@ public class UpdateUser extends Basesuit
 	/*****************************************************************/
 	public void Update_profileLink()
 	{
+		waitForPageLoad(Driver, Updateprofile);
 		HighlightOnElement(Updateprofile);
 		Updateprofile.click();
 	}
 	public void Mobile_Number(String Mobile)
 	{
+		waitForPageLoad(Driver, MobileNo);
 		HighlightOnElement(MobileNo);
 		MobileNo.clear();
 		MobileNo.sendKeys(Mobile);
 	}
 	public void Email_ID(String Email)
 	{
+		waitForPageLoad(Driver, EmailID);
 		HighlightOnElement(EmailID);
 		EmailID.clear();
 		EmailID.sendKeys(Email);
@@ -96,16 +99,19 @@ public class UpdateUser extends Basesuit
 	}
 	public void Update_btn()
 	{
+		waitForPageLoad(Driver, Update);
 		HighlightOnElement(Update);
 		Update.click();
 	}
 	public void Confirm_btn()
 	{
+		waitForPageLoad(Driver, Confirm);
 		HighlightOnElement(Confirm);
 		Confirm.click();
 	}
 	public void No_btn()
 	{
+		waitForPageLoad(Driver, No);
 		HighlightOnElement(No);
 		No.click();
 	}

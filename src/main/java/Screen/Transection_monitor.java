@@ -57,16 +57,19 @@ public class Transection_monitor extends Basesuit
 	/*****************************************************************/
 	public void T_monitor()
 	{
+		waitForPageLoad(Driver, Tmonitor);
 		HighlightOnElement(Tmonitor);
 		Tmonitor.click();
 	}
 	public void Refarence_no(String Num)
 	{
+		waitForPageLoad(Driver, Refarenceno);
 		HighlightOnElement(Refarenceno);
 		Refarenceno.sendKeys(Num);
 	}
 	public void Search()
 	{
+		waitForPageLoad(Driver, Search);
 		HighlightOnElement(Search);
 		Search.click();
 	}
