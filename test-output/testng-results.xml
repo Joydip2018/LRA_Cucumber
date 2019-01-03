@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[Error Message:Profile has been updated successfully.]]>
-    </line>
   </reporter-output>
-  <suite name="Suite1" duration-ms="111260" started-at="2018-12-31T12:10:56Z" finished-at="2018-12-31T12:12:47Z">
+  <suite name="Suite1" duration-ms="63969" started-at="2019-01-03T03:54:49Z" finished-at="2019-01-03T03:55:53Z">
     <groups>
       <group name="cucumber">
-        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@56ef9176]" name="feature" class="runner.TestRunner"/>
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@4fe3c938]" name="feature" class="runner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="111260" started-at="2018-12-31T12:10:56Z" finished-at="2018-12-31T12:12:47Z">
+    <test name="Test" duration-ms="63969" started-at="2019-01-03T03:54:49Z" finished-at="2019-01-03T03:55:53Z">
       <class name="runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@56ef9176]" name="setUpClass" is-config="true" duration-ms="256" started-at="2018-12-31T12:10:56Z" finished-at="2018-12-31T12:10:56Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@4fe3c938]" name="setUpClass" is-config="true" duration-ms="296" started-at="2019-01-03T03:54:49Z" finished-at="2019-01-03T03:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@56ef9176]" name="feature" duration-ms="42075" started-at="2018-12-31T12:10:56Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-31T12:11:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User Apply for New Certificate]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@56ef9176]" name="feature" duration-ms="34345" started-at="2018-12-31T12:11:38Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-31T12:12:13Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@4fe3c938]" name="feature" duration-ms="32940" started-at="2019-01-03T03:54:50Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-01-03T03:55:23Z">
           <params>
             <param index="0">
               <value>
@@ -36,10 +22,93 @@
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DEV_TEST_JOYDIP', ip: '192.168.141.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\JOYDIP~1.BHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64608}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c158ec402a36043117b69a1d92491b70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DEV_TEST_JOYDIP', ip: '192.168.141.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\JOYDIP~1.BHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64608}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c158ec402a36043117b69a1d92491b70
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at runner.TestRunner.feature(TestRunner.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DEV_TEST_JOYDIP', ip: '192.168.141.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\JOYDIP~1.BHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64608}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c158ec402a36043117b69a1d92491b70
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:928)
+at configuration.Basesuit.isAlertPresent(Basesuit.java:73)
+at Screen.Login.logintest(Login.java:131)
+at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:23)
+at ✽.When I give the valid "Test0001" and "Pass@1234"(./src/main/java/features/UserTransectionreport.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@56ef9176]" name="feature" duration-ms="33537" started-at="2018-12-31T12:12:13Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-31T12:12:46Z">
+        <test-method status="PASS" signature="Misc()[pri:0, instance:runner.TestRunner@4fe3c938]" name="Misc" is-config="true" duration-ms="252" started-at="2019-01-03T03:55:23Z" finished-at="2019-01-03T03:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Misc -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@4fe3c938]" name="feature" duration-ms="26731" started-at="2019-01-03T03:55:23Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-01-03T03:55:50Z">
           <params>
             <param index="0">
               <value>
@@ -47,13 +116,60 @@
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: expected [Captcha does match.] but found [Captcha does not match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Captcha does match.] but found [Captcha does not match.]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at runner.TestRunner.feature(TestRunner.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: expected [Captcha does match.] but found [Captcha does not match.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at Screen.Login.logintest(Login.java:136)
+at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:23)
+at ✽.When I give the valid "Test0001" and "Pass@1234"(./src/main/java/features/UserUpdateProfile.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
-            <line>
-              <![CDATA[Error Message:Profile has been updated successfully.]]>
-            </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@56ef9176]" name="tearDownClass" is-config="true" duration-ms="964" started-at="2018-12-31T12:12:46Z" finished-at="2018-12-31T12:12:47Z">
+        <test-method status="PASS" signature="Misc()[pri:0, instance:runner.TestRunner@4fe3c938]" name="Misc" is-config="true" duration-ms="2063" started-at="2019-01-03T03:55:50Z" finished-at="2019-01-03T03:55:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Misc -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@4fe3c938]" name="tearDownClass" is-config="true" duration-ms="1184" started-at="2019-01-03T03:55:52Z" finished-at="2019-01-03T03:55:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

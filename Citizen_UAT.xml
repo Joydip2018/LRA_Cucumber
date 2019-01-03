@@ -3,10 +3,10 @@
 <suite name="Suite1">
   <parameter name="Reportname" value="Citizen_test_Report"/>
 
-  <!--  <listeners>
+  <listeners>
   	<listener class-name="Utility.Listener"></listener>
-  	<listener class-name="Utility.AnnotationTransformer"></listener>
-  </listeners>-->
+  	<!-- <listener class-name="Utility.AnnotationTransformer"></listener>-->
+  </listeners>
   
   <test thread-count="1" name="Test">
     <classes>

@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -64,6 +66,18 @@ public class Basesuit
 	           Assert.fail("Timeout waiting for Page Load Request to complete.");
 	       }
 	}
+	public boolean isAlertPresent() 
+	{ 
+	    try 
+	    { 
+	    	Driver.switchTo().alert(); 
+	        return true; 
+	    }  
+	    catch (UnhandledAlertException Ex) 
+	    { 
+	        return false; 
+	    }  
+	}  
 	/****************************************************************************************************/
 	 /* This method used to click on "OK" button of the alert pop up
 	  * @author Joydip.Bhattacharjee*/

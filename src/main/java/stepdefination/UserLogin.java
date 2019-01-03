@@ -13,8 +13,7 @@ public class UserLogin extends Baseclass
 
 	@Given("^I have open the browser and enter the LRA URL$")
 	public void i_have_open_the_browser_and_enter_the_LRA_URL() throws Exception
-	{
-		
+	{		
 		ln.login_link();
 	}
 

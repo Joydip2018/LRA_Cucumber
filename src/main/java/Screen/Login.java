@@ -8,6 +8,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import configuration.Basesuit;
 
@@ -126,6 +127,7 @@ public class Login extends Basesuit
 		JS.executeScript("alert('Please enter the Capcha, This screen will hold for 20 Seconds only...')");
 		Thread.sleep(20000);
 		loginclick();
+		
 		try
 		{
 		boolean x=LoginBtn.isDisplayed();

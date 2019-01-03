@@ -5,8 +5,9 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 //import com.aventstack.extentreports.ExtentTest;
 import configuration.Basesuit;
+import stepdefination.Hook;
 
-public class Listener implements ITestListener
+public class Listener extends Hook implements ITestListener
 
 {
 	// ExtentTest logger;
@@ -30,9 +31,9 @@ public class Listener implements ITestListener
 		try 
 		{
 			Snapshot shot= new Snapshot();
-			String img="Pass_"+result.getName();
+			String img="Fail "+rawFeatureName;
 			System.out.println(img);
-			shot.takescreen(img, Basesuit.getdriver());
+			shot.takescreen(img, Basesuit.Driver);
 		} 
 		catch (Exception e) 
 		{
@@ -55,8 +56,9 @@ public class Listener implements ITestListener
 		try 
 		{
 			Snapshot shot= new Snapshot();
-			String img="Pass_"+result.getName();
-			shot.takescreen(img, Basesuit.getdriver());
+			String img="Pass "+rawFeatureName;
+			System.out.println(img);
+			shot.takescreen(img, Basesuit.Driver);
 		} 
 		catch (Exception e) 
 		{

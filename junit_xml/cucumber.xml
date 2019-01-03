@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="102.170229">
-<testcase classname="User Apply for New Certificate" name="Apply for New Certificate" time="41.668724">
-<system-out><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
-When I give the valid "Test0001" and "Pass@1234"............................passed
-Then Home page apper in screen..............................................passed
-Given Click on New Certificate button.......................................passed
-When Fill the form and click on add.........................................passed
-Then Certified True Copy should generate requestid..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Transection Report" name="User Transection Report" time="27.482609">
-<failure message="org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Captcha does not match.}&#10;  (Session info: chrome=71.0.3578.98)&#10;  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds: null&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'DEV_TEST_JOYDIP', ip: '192.168.141.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\JOYDIP~1.BHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59404}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}&#10;Session ID: 4bf636b24e458039e9c44551c3f00833&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)&#13;&#10;&#9;at Screen.Login.logintest(Login.java:131)&#13;&#10;&#9;at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:24)&#13;&#10;&#9;at ✽.When I give the valid &quot;Test0001&quot; and &quot;Pass@1234&quot;(./src/main/java/features/UserTransectionreport.feature:6)&#13;&#10;"><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="59.580581">
+<testcase classname="User Transection Report" name="User Transection Report" time="32.868257">
+<failure message="org.openqa.selenium.NoAlertPresentException: no such alert&#10;  (Session info: chrome=71.0.3578.98)&#10;  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'DEV_TEST_JOYDIP', ip: '192.168.141.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\JOYDIP~1.BHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64608}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}&#10;Session ID: c158ec402a36043117b69a1d92491b70&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:928)&#13;&#10;&#9;at configuration.Basesuit.isAlertPresent(Basesuit.java:73)&#13;&#10;&#9;at Screen.Login.logintest(Login.java:131)&#13;&#10;&#9;at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:23)&#13;&#10;&#9;at ✽.When I give the valid &quot;Test0001&quot; and &quot;Pass@1234&quot;(./src/main/java/features/UserTransectionreport.feature:6)&#13;&#10;"><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
 When I give the valid "Test0001" and "Pass@1234"............................failed
 Then Home page apper in screen..............................................skipped
 Given Click on Transection Monitor button...................................skipped
@@ -18,47 +9,54 @@ When Enter the Reference Number.............................................skip
 Then Click on search Button.................................................skipped
 
 StackTrace:
-org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Captcha does not match.}
+org.openqa.selenium.NoAlertPresentException: no such alert
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
+Command duration or timeout: 0 milliseconds
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DEV_TEST_JOYDIP', ip: '192.168.141.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\JOYDIP~1.BHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59404}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 4bf636b24e458039e9c44551c3f00833
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\JOYDIP~1.BHA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64608}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c158ec402a36043117b69a1d92491b70
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:928)
+	at configuration.Basesuit.isAlertPresent(Basesuit.java:73)
 	at Screen.Login.logintest(Login.java:131)
-	at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:24)
+	at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:23)
 	at ✽.When I give the valid "Test0001" and "Pass@1234"(./src/main/java/features/UserTransectionreport.feature:6)
 ]]></failure>
 </testcase>
-<testcase classname="User Update Profile" name="Update User Profile" time="33.018896">
-<system-out><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
-When I give the valid "Test0001" and "Pass@1234"............................passed
-Then Home page apper in screen..............................................passed
-Given Click on Update Profile button........................................passed
-When Enter new Mobile no, Email-ID, Shipping Address........................passed
-Then Click on update Button.................................................passed
-]]></system-out>
+<testcase classname="User Update Profile" name="Update User Profile" time="26.712324">
+<failure message="java.lang.AssertionError: expected [Captcha does match.] but found [Captcha does not match.]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertEqualsImpl(Assert.java:137)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:453)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:463)&#13;&#10;&#9;at Screen.Login.logintest(Login.java:136)&#13;&#10;&#9;at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:23)&#13;&#10;&#9;at ✽.When I give the valid &quot;Test0001&quot; and &quot;Pass@1234&quot;(./src/main/java/features/UserUpdateProfile.feature:6)&#13;&#10;"><![CDATA[Given I have open the browser and enter the LRA URL.........................passed
+When I give the valid "Test0001" and "Pass@1234"............................failed
+Then Home page apper in screen..............................................skipped
+Given Click on Update Profile button........................................skipped
+When Enter new Mobile no, Email-ID, Shipping Address........................skipped
+Then Click on update Button.................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected [Captcha does match.] but found [Captcha does not match.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at Screen.Login.logintest(Login.java:136)
+	at stepdefination.UserLogin.i_give_the_valide_and(UserLogin.java:23)
+	at ✽.When I give the valid "Test0001" and "Pass@1234"(./src/main/java/features/UserUpdateProfile.feature:6)
+]]></failure>
 </testcase>
 </testsuite>
