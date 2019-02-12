@@ -28,5 +28,4 @@ public class UserLogin extends Baseclass
 	{
 		Thread.sleep(1000);
 	}
-
 }

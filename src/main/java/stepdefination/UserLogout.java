@@ -6,8 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class UserLogout extends Baseclass
-{
-	
+{	
 	@Given("^All ready logedin into the user portal\\.$")
 	public void all_ready_logedin_into_the_user_portal() throws Exception
 	{
